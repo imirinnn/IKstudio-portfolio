@@ -1,0 +1,11 @@
+{
+  "name": "ikstudio-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "IK Studio website + enquiry API, deployed as one web service",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend --include=dev && VITE_API_URL=/ npm run build --prefix frontend",
+    "start": "npm start --prefix backend"
+  }
+}
